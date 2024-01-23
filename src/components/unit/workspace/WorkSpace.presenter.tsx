@@ -26,7 +26,9 @@ const WorkspaceUI = (props: IWorkspaceUIProps) => {
           onClickRight={props.onClickCloseLogoutModal}
           buttonNameLeft="예"
           buttonNameRight="아니요"
-          content="로그아웃 하시겠습니까?"
+          content={
+            props.user ? "로그아웃 하시겠습니까?" : "초기화면으로 가시겠습니까?"
+          }
         />
       )}
       {props.isCustomBoardOpen && (
@@ -45,20 +47,22 @@ const WorkspaceUI = (props: IWorkspaceUIProps) => {
         <div style={{ width: "100%" }}>
           <TopWrapper>
             <ProfileWrapper>
-              {!props.userLoading && props.user && (
+              {!props.userLoading && (
                 <>
                   <Photo
-                    src={props.user?.photoURL || "/images/default_pengsooz"}
+                    src={props.user?.photoURL || "/images/default_profile.png"}
                   />
                   <TextWrapper>
-                    <DisplayName>{props.user?.displayName}</DisplayName>
-                    <Email>{props.user?.email}</Email>
+                    <DisplayName>
+                      {props.user?.displayName || "GUEST"}
+                    </DisplayName>
+                    <Email>{props.user?.email || "GUEST.email"} </Email>
                   </TextWrapper>
                 </>
               )}
             </ProfileWrapper>
             <LogoutButton onClick={props.onClickOpenLogoutModal}>
-              로그아웃
+              {props.user ? "로그아웃" : "초기화면"}
             </LogoutButton>
           </TopWrapper>
         </div>

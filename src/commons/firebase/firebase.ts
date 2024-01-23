@@ -4,12 +4,12 @@ import "firebase/firestore";
 
 // 프로젝트 공용 (JH)
 const clientCredentials = {
-  apiKey: "AIzaSyDUode-3Ahyy5698hB0usCiM23KRpW2gNo",
-  authDomain: "pensooz-fire.firebaseapp.com",
-  projectId: "pensooz-fire",
-  storageBucket: "pensooz-fire.appspot.com",
-  messagingSenderId: "1080768406589",
-  appId: "1:1080768406589:web:9c7768048dc368a4c1f654",
+  apiKey: process.env.NEXT_PUBLIC_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_APP_ID,
 };
 
 if (!firebase.apps.length) {
