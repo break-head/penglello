@@ -2,12 +2,24 @@
 
 ![](https://media.vlpt.us/images/luckychdl/post/7a94b350-6358-4b45-b834-bbcb2da7c4df/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202021-09-25%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.11.25.png)
 
+<img width="2037" alt="스크린샷 2024-01-30 오전 11 50 03" src="https://github.com/break-head/penglello/assets/81821776/6859090c-d0f8-4cd8-bd2e-4946c1cf4592">
+
+<img width="2039" alt="스크린샷 2024-01-30 오전 11 50 14" src="https://github.com/break-head/penglello/assets/81821776/85afa34b-3e4d-447a-83c8-809d135e29bb">
 
 - **배포 링크 :** 파이어베이스를 통한 https://penglello.web.app/
 
 ### Overview
 
 프로젝트 관리 어플 트렐로 클론을 통해 프로젝트 진행을 관리할 수 있는 서비스 구현
+
+### 맡은 역할
+1. 파이어베이스 NOSQL 데이터베이스 구조 설계
+2. 파이어베이스 AUTH를 통한 구글로그인 및 관리 구현
+3. 파이어베이스를 통해 서비스 배포 및 호스팅 완료
+4. 보드와 바스켓들의 유연한 활용을 위한 Drag-and-Drop기능 구현
+5. 각 기능별 crud 구현
+
+
 
 ### 사용 기술스택
 
@@ -16,13 +28,6 @@
 ### WorkFlow
 
 ![](https://media.vlpt.us/images/luckychdl/post/c9ca496b-84af-4338-a075-c85adb1d4614/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202021-09-25%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%206.16.38.png)
-
-### 맡은 역할
-1. 파이어베이스 NOSQL 데이터베이스 구조 설계
-2. 파이어베이스 AUTH를 통한 구글로그인 및 관리 구현
-3. 파이어베이스를 통해 서비스 배포 및 호스팅 완료
-4. 보드와 바스켓들의 유연한 활용을 위한 Drag-and-Drop기능 구현
-5. 각 기능별 crud 구현
 
 
 ### 주요기능
